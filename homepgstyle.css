@@ -19,12 +19,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 10%;
+    padding: 30px;
+    background-image: url(imgs/325314458_885950669110939_509726441322598373_n.jpg);
 }
 
 .logo {
     width: 150px;
     cursor: pointer;
+    background-color: white;
 }
 
 .menu-items {
@@ -63,7 +65,17 @@ button {
     align-items: center;
 }
 
+.content-island {
+    display: flex;
+    background-color: white;
+}
+
+.image-banner {
+    padding: 10%;
+    background-color: grey;
+}
+
 .categories li {
+    list-style: none;
     text-decoration: none;
-    list-style-type: none;
 }
