@@ -6,6 +6,11 @@
     margin: 0px;
 }
 
+main  {
+    position: relative;
+    top: 90px;
+}
+
 /* Define list items and anchor tags and button fonts */
 li, a, button {
     font-family: 'Raleway', sans-serif;
@@ -22,6 +27,14 @@ p {
     font-size: 25px;
 }
 
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
 h2 {
     font-family: 'Raleway', sans-serif;
     color: black;
@@ -30,29 +43,56 @@ h2 {
     font-size: 30px;
 }
 
+span {
+    font-family: 'Raleway';
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 /* Header format and background */
 header {
+    width: 100%;
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 1.5%;
+    justify-content: space-around;
     background-color: #24252a;
-    height: 20%;
+    height: 10%;
+    z-index: 1;
 }
 
-.banner-container {
-    background-image: url('imgs/Banner.jpg');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 80vh;
-    
+.logo {
+    width: 150px;
+    cursor: pointer;
+    background-color: auto;
 }
 
-.banner-content {
-    background-color: black;
-    position: absolute;
-    margin-top: 30%;
+.menu-items {
+    list-style: none;
+}
+
+.menu-items li {
+    display: inline-block;
+}
+
+.menu-items li a{
+    transition: all 0.3s ease 0s;
+    padding: 0px 50px;
+}
+
+.menu-items li a:hover {
+    color: aquamarine;
+}
+
+button {
+    padding: 9px 25px;
+    color: white;
+    background-color: palevioletred;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease 0s;
 }
 
 .footer-container {
@@ -67,7 +107,7 @@ header {
     padding-top: 4vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #24252a;
 }
 

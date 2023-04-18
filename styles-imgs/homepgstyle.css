@@ -1,39 +1,21 @@
-.books-name {
-    margin-top: 4vh;
-    font-size: 30px;
+.banner-container {
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(146, 146, 146, 0.5), rgb(46, 46, 46)),
+     url('imgs/Banner.jpg');
+    background-size: cover;
+    height: 50vh;
+    overflow: hidden;
 }
 
-.logo {
-    width: 150px;
-    cursor: pointer;
-    background-color: auto;
-}
-
-.menu-items {
-    list-style: none;
-}
-
-.menu-items li {
-    display: inline-block;
-}
-
-.menu-items li a{
-    transition: all 0.3s ease 0s;
-    padding: 0px 50px;
-}
-
-.menu-items li a:hover {
-    color: aquamarine;
-}
-
-button {
-    padding: 9px 25px;
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     color: white;
-    background-color: palevioletred;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: 0.3s ease 0s;
+    text-align: center;
+    font-weight: 700;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
 }
 
 .display-container {
@@ -70,8 +52,43 @@ button {
 
 .books {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
     align-items: center;
-    padding: 5vh;
+    padding: 5%;
+}
+
+.book-cover {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+}
+
+.book-cover:hover {
+    size-adjust: 10%;
+}
+
+/* Reference: https://codepen.io/t_afif/pen/poawLeQ */
+.books-name {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #607d8b; /* the color */
+    
+    margin-top: 3vh;
+    font-size: 40px;
+    margin-bottom: 0px;
+
+    color: white;
+    padding-block: var(--b);
+    background: 
+        linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+        linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+        background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+}
+
+.books-name:hover {
+    --_p: 100%;
+    --_s: .3s;
+    color: #90a4ae;
 }
