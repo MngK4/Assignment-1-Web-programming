@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 /* Define all elements */
 * {
@@ -7,6 +8,7 @@
     margin: 0px;
 }
 
+/* leave space for header */
 main  {
     position: relative;
     top: 90px;
@@ -44,9 +46,21 @@ h2 {
     font-size: 30px;
 }
 
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
 h4 {
     font-family: 'Roboto Mono';
     font-size: 20px;
+}
+
+tr {
+    font-family: 'Montserrat';
+    font-weight: 600;
 }
 
 span {
@@ -58,6 +72,7 @@ span {
 
 /* Header format and background */
 header {
+    top: 0;
     width: 100%;
     position: fixed;
     display: flex;
@@ -102,18 +117,20 @@ button {
 }
 
 .footer-container {
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-color: #24252a;   
-    height: 20vh;
 }
 
 .footer-content {
-    padding-top: 4vh;
+    margin-top: 4vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     background-color: #24252a;
 }
 

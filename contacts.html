@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-imgs/centralstyle.css">
+    <link rel="stylesheet" href="styles-imgs/contactspgstyle.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,46 +15,96 @@
             <ul class="menu-items">
                 <li><a href="homepage.html">Home</a></li>            
                 <li><a href="#">Shop</a></li>
-                <li><a href="#">Contacts</a> </li>
+                <li><a href="contacts.html">Contacts</a> </li>
             </ul>
         </nav>
         <button>Suprise</button>
     </header>
     <main>
-        <div class="contactsform-container">
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        
-            <label for="country">Country</label>
-            <select id="country" name="country">
-              <option value="australia">Australia</option>
-              <option value="canada">Canada</option>
-              <option value="usa">USA</option>
-            </select>
-        
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        
-            <input type="submit" value="Submit">
+        <div class="form-container">
+            <h2>Get in touch with us!</h2>
+            <p>What's on your mind? Let us know and we will get back to you!</p>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send your inquiry</h3>
 
+                    <div class="input-row">
+                        <div class="input-column">
+                            <label for="input-name">Name</label>
+                            <input type="text" name="Name" id="input-name">
+                        </div>
+                        <div class="input-column">
+                            <label for="input-phone">Phone</label>
+                            <input type="text" name="Phone" id="input-phone">
+                        </div>
+                    </div>
 
+                    <div class="input-row">
+                        <div class="input-column">
+                            <label for="input-email">Email</label>
+                            <input type="text" name="Email" id="input-email">
+                        </div>
+                        <div class="input-column">
+                            <label for="subject">Subject</label>
+                            <select name="contact-purpose" id="purpose-option">
+                                <option value="1">---</option>
+                                <option value="2">I want to sell books</option>
+                                <option value="3">I want to buy books</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="newsletter-radio">
+                        <label for="">Would you like to receive weekly newsletter?</label>
+                        <div class="options">
+                            <input type="radio" id="Yes" name="weekly-news" value="Yes">
+                            <label for="Yes">Yes</label>
+                        </div>
+                        <div class="options">
+                            <input type="radio" id="No" name="weekly-news" value="No">
+                            <label for="No">No</label>
+                        </div>
+                    </div>
+
+                    <label for="">Message</label>
+                    <textarea name="more-info" id="info" rows="5"></textarea>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+
+                </div>
+                <div class="contact-right">
+                    <h3>Or reach us by</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@rmit.edu.vn</td>
+                        </tr>
+                        <tr>
+                            <td>Phone number</td>
+                            <td>096969420</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>702 Đ. Nguyễn Văn Linh, Tân Hưng, Quận 7, Thành phố Hồ Chí Minh 700000</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
-
         <div class="footer-container">
             <div class="footer-content">
-                <a href="#">About Us</a>
-    
-    
-                <a href="#">Privacy Policies</a>
-    
-    
-                <a href="#">Terms</a>
-    
-    
-                <a href="#">Contact Us</a>
+                <div class="footer-element">
+                    <a href="#">About Us</a>
+                </div>    
+                <div class="footer-element">
+                    <a href="#">Privacy Policies</a>
+                </div>    
+                <div class="footer-element">
+                    <a href="#">Terms</a>
+                </div>    
+                <div class="footer-element">
+                    <a href="#">About Us</a>
+                </div>    
             </div>
     
             <div class="copyright-container">
