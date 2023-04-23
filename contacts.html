@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles-imgs/centralstyle.css">
     <link rel="stylesheet" href="styles-imgs/contactspgstyle.css">
+    <link rel="stylesheet" href="styles-imgs/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header id="desktop-header">
         <img class="logo" src="styles-imgs/imgs/2560px-RMIT_University_Logo.svg.png" alt="store-logo-ing">
+        <div class="hamburger-icon" media="(max-width: 960px)"  onclick="menuOn()">
+            <i class="fa-solid fa-bars hamburger"></i>
+        </div>
         <nav>
             <ul class="menu-items">
                 <li><a href="homepage.html">Home</a></li>            
@@ -20,7 +25,19 @@
         </nav>
         <button>Suprise</button>
     </header>
-    <main>
+
+    <div id="dropdown-overlay">
+        <div class="cancel-dropdown" media="(max-width: 960px)" onclick="menuOff()">
+            <i class="fa-solid fa-xmark cancel"></i>
+        </div>
+        <div class="dropdown-list">
+            <div class="dropdown-item"><a href="homepage.html">Home</a></div>
+            <div class="dropdown-item"><a href="category.html">Shop</a></div>
+            <div class="dropdown-item"><a href="contacts.html">Contacts</a></div>
+        </div>
+    </div>
+
+    <main id="desktop-main">
         <div class="form-container">
             <h2>Get in touch with us!</h2>
             <p>What's on your mind? Let us know and we will get back to you!</p>
@@ -58,7 +75,7 @@
                         <div class="newsletter-radio">
                             <label for="">Would you like to receive weekly newsletter?</label>
                             <div class="options">
-                                <input type="radio" id="Yes" name="weekly-news" value="Yes">
+                                <input type="radio" id="Yes" name="weekly-news" value="Yes" checked>
                                 <label for="Yes">Yes</label>
                             </div>
                             <div class="options">
@@ -114,4 +131,5 @@
         </div>
     </main>
 </body>
+<script src="navbar.js"></script>
 </html>

@@ -7,10 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles-imgs/centralstyle.css">
     <link rel="stylesheet" href="styles-imgs/detailspgstyle.css">
+    <link rel="stylesheet" href="styles-imgs/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="desktop-header">
         <img class="logo" src="styles-imgs/imgs/2560px-RMIT_University_Logo.svg.png" alt="store-logo-ing">
+        <div class="hamburger-icon" media="(max-width: 960px)"  onclick="menuOn()">
+            <i class="fa-solid fa-bars hamburger"></i>
+        </div>
         <nav>
             <ul class="menu-items">
                 <li><a href="homepage.html">Home</a></li>            
@@ -21,7 +26,18 @@
         <button>Suprise</button>
     </header>
 
-    <main>
+    <div id="dropdown-overlay">
+        <div class="cancel-dropdown" media="(max-width: 960px)" onclick="menuOff()">
+            <i class="fa-solid fa-xmark cancel"></i>
+        </div>
+        <div class="dropdown-list">
+            <div class="dropdown-item"><a href="homepage.html">Home</a></div>
+            <div class="dropdown-item"><a href="category.html">Shop</a></div>
+            <div class="dropdown-item"><a href="contacts.html">Contacts</a></div>
+        </div>
+    </div>
+
+    <main id="desktop-main">
         <div class="product-container">
             <h3>
                 <ul class="breadcrumb">
@@ -34,18 +50,20 @@
     
             <div class="content-container">
                 <div class="img-column">
-                    <img src="styles-imgs/imgs/Bookcover-1.jpg" alt="">
+                    <div>
+                        <img id="default-img" src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="">
+                    </div>
                     <div class="radio-btns" role="radiogroup">
-                        <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one">
-                          <img src="styles-imgs/imgs/Bookcover-2.jpg" alt="Image description">
+                        <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one" onclick="imgSpotlight1()">
+                          <img id="img1" src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Image description">
                         </div>
                       
-                        <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image two">
-                          <img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Image description">
+                        <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image two" onclick="imgSpotlight2()">
+                          <img id="img2" src="styles-imgs/imgs/Book-covers/Bookcover-2.jpg" alt="Image description" >
                         </div>
                       
-                        <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image three">
-                          <img src="styles-imgs/imgs/Bookcover-2.jpg" alt="Image description">
+                        <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image three" onclick="imgSpotlight3()">
+                          <img id="img3" src="styles-imgs/imgs/Book-covers/Bookcover-3.jpg" alt="Image description">
                         </div>
                       </div>
                 </div>
@@ -83,6 +101,9 @@
         <div class="copyright-container">
             <h3 id="copyright">Copyright MingKa 2023TDM</h3>
         </div>
-    </div></main>
+    </div>
+</main>
 </body>
+<script src="navbar.js"></script>
+<script src="image-gallery.js"></script>
 </html>

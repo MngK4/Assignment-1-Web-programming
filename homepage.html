@@ -7,10 +7,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles-imgs/centralstyle.css">
     <link rel="stylesheet" href="styles-imgs/homepgstyle.css">
+    <link rel="stylesheet" href="styles-imgs/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+    <header id="desktop-header">
         <img class="logo" src="styles-imgs/imgs/2560px-RMIT_University_Logo.svg.png" alt="store-logo-ing">
+        <div class="hamburger-icon" media="(max-width: 960px)"  onclick="menuOn()">
+            <i class="fa-solid fa-bars hamburger"></i>
+        </div>
+        
         <nav>
             <ul class="menu-items">
                 <li><a href="#">Home</a></li>            
@@ -21,11 +27,25 @@
         <button>Suprise</button>
     </header>
 
-    <main>
+    <div id="dropdown-overlay">
+        <div class="cancel-dropdown" media="(max-width: 960px)" onclick="menuOff()">
+            <i class="fa-solid fa-xmark cancel"></i>
+        </div>
+        <div class="dropdown-list">
+            <div class="dropdown-item"><a href="homepage.html">Home</a></div>
+            <div class="dropdown-item"><a href="category.html">Shop</a></div>
+            <div class="dropdown-item"><a href="contacts.html">Contacts</a></div>
+        </div>
+    </div>
+
+    <main id="desktop-main">
         <div class="banner-container">
+            <video autoplay muted loop src="styles-imgs/imgs/Videos/Manga-Background.mp4" id="banner-vid"></video>
             <div class="banner-content">
-                <h1>Title</h1>
-                <span>Description for something idk lmao</span>
+                <div class="banner-text">
+                    <h1>Title</h1>
+                    <span>Description for something idk lmao</span>
+                </div>
             </div>
         </div>
     
@@ -35,15 +55,15 @@
             </div>
             <div class="books-container">
                 <div class="books">
-                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">Book 1</a>
+                </div>
+                <div class="books">
+                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Book1" width="60%"></a>
                     <a href="" class="books-name">Book 1</a>
                 </div>
                 <div class="books">
-                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Book1" width="60%"></a>
-                    <a href="" class="books-name">Book 1</a>
-                </div>
-                <div class="books">
-                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Book1" width="60%"></a>
                     <a href="" class="books-name">Book 1</a>
                 </div>
             </div>
@@ -55,15 +75,15 @@
             </div>
             <div class="books-container">
                 <div class="books">
-                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Book1" width="60%"></a>
                     <a href="" class="books-name">Book 1</a>
                 </div>
                 <div class="books">
-                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Book1" width="60%"></a>
                     <a href="" class="books-name">Book 1</a>
                 </div>
                 <div class="books">
-                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Bookcover-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Book1" width="60%"></a>
                     <a href="" class="books-name">Book 1</a>
                 </div>
             </div>
@@ -91,4 +111,5 @@
     </main>
     
 </body>
+<script src="navbar.js"></script>
 </html>
