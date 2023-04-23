@@ -1,9 +1,20 @@
+  /* 
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Dang Kim Quang Minh
+  ID: s3938024
+  Acknowledgement: 
+  - Image gallery hover effect: https://codepen.io/codyhouse/pen/KKdrmXj
+  */
+
 * {
     padding: 0px;
     margin: 0px;
 }
 
-/* Breadcrumbs navigation list */
+  /* Breadcrumbs navigation list */
 ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
@@ -12,10 +23,7 @@ ul.breadcrumb {
   align-items: center;
 }
   
-/* Display list items side by side */
-
-
-
+  /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
   font-size: 18px;
@@ -40,6 +48,8 @@ ul.breadcrumb li a:hover {
   text-decoration: underline;
 }
 
+
+  /* Big container for elements */
 .content-container {
   background-color: rgb(255, 255, 255);
   padding: 5%;
@@ -48,6 +58,8 @@ ul.breadcrumb li a:hover {
   align-items: center;
 }
 
+
+  /* Display image for specific book */
 .img-column  {
   width: 500px;
   display: flex;
@@ -57,12 +69,15 @@ ul.breadcrumb li a:hover {
   border-style: solid;
 }
 
+
+  /* Book cover display */
 .img-column img {
   object-fit: contain;
   width: 500px;
 
 }
 
+  /* Book cover gallery */
 .radio-btns {
   display: grid;
   justify-content: center;
@@ -71,6 +86,7 @@ ul.breadcrumb li a:hover {
   grid-template-columns: repeat(3, 100px);
 }
 
+  /* Hover effect for images in gallery */
 .radio-btns:hover .radio-btns__btn:not(:hover) {
   filter: grayscale(100%);
   opacity: 0.75;
@@ -109,6 +125,8 @@ ul.breadcrumb li a:hover {
   max-width: 100%;
 }
 
+  /* Container for elements next to displayed book 
+  like Book name, Price and Add to cart button */
 .content-column {
   display: flex;
   justify-content: right;
@@ -117,7 +135,7 @@ ul.breadcrumb li a:hover {
 }
 
 .content-column h2{
-  font-size: 80px;
+  font-size: 40px;
 }
 
 .content-column h4{
@@ -129,23 +147,29 @@ ul.breadcrumb li a:hover {
   margin-top: 10px;
 }
 
-.product-description {
+  /* Product description container */
+.product-description-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(203, 231, 255);
+  padding: 4%;
 }
 
+  /* Book name */
 .product-description  h2{
-  padding: 1%;
-  background-color: aquamarine;
+  padding: 3%;
+  margin-bottom: 2%;
 }
 
+  /* Book description */
 .description-content {
-  padding: 5%;
-  width: 100%;
+  padding: 3%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #003f75;
+  background-color: #646464;
+  border-radius: 10px;
 }

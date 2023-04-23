@@ -1,18 +1,28 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Dang Kim Quang Minh
+ID: s3938024
+Acknowledgement:
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="styles-imgs/centralstyle.css">
     <link rel="stylesheet" href="styles-imgs/detailspgstyle.css">
     <link rel="stylesheet" href="styles-imgs/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Book detail page</title>
 </head>
 <body>
     <header id="desktop-header">
-        <img class="logo" src="styles-imgs/imgs/2560px-RMIT_University_Logo.svg.png" alt="store-logo-ing">
+        <img class="logo" src="styles-imgs/imgs/Logo/Book Store.png" alt="store-logo-ing">
         <div class="hamburger-icon" media="(max-width: 960px)"  onclick="menuOn()">
             <i class="fa-solid fa-bars hamburger"></i>
         </div>
@@ -51,34 +61,36 @@
             <div class="content-container">
                 <div class="img-column">
                     <div>
-                        <img id="default-img" src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="">
+                        <img id="default-img" src="styles-imgs/imgs/Book-covers/Fiction/Comic-1.jpg" alt="">
                     </div>
                     <div class="radio-btns" role="radiogroup">
                         <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image one" onclick="imgSpotlight1()">
-                          <img id="img1" src="styles-imgs/imgs/Book-covers/Bookcover-1.jpg" alt="Image description">
+                          <img id="img1" src="styles-imgs/imgs/Book-covers/Fiction/Comic-1.jpg" alt="Image description">
                         </div>
                       
                         <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image two" onclick="imgSpotlight2()">
-                          <img id="img2" src="styles-imgs/imgs/Book-covers/Bookcover-2.jpg" alt="Image description" >
+                          <img id="img2" src="styles-imgs/imgs/Book-covers/Fiction/Comic-2.jpg" alt="Image description" >
                         </div>
                       
                         <div class="radio-btns__btn" role="radio" aria-checked="false" tabindex="-1" aria-label="Select image three" onclick="imgSpotlight3()">
-                          <img id="img3" src="styles-imgs/imgs/Book-covers/Bookcover-3.jpg" alt="Image description">
+                          <img id="img3" src="styles-imgs/imgs/Book-covers/Fiction/Comic-3.jpg" alt="Image description">
                         </div>
                       </div>
                 </div>
                 <div class="content-column">
-                    <h2>Book Name</h2>
-                    <h4>Price $$</h4>
+                    <div class="book-name">
+                        <h2>Scott Pilgrim's color collection</h2>
+                    </div>
+                    <h4>Price: 100$</h4>
                     <button>Buy now</button>
                 </div>
             </div>
         </div>
 
-        <div class="product-description">
-            <h2>Book Name</h2>
+        <div class="product-description-container">
+            <h2>Scott Pilgrim</h2>
             <div class="description-content">
-                <p>Book description goes here lesgo bb</p>
+                <p>The series is about Scott Pilgrim, a slacker and part-time musician who lives in Toronto, Ontario, and plays bass ‍in a band. He falls in love with American delivery girl Ramona Flowers, but must defeat her seven evil exes in order to date her in peace.</p>
             </div>
         </div>
 

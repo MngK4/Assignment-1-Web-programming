@@ -1,3 +1,21 @@
+  /* 
+  RMIT University Vietnam
+  Course: COSC2430 Web Programming
+  Semester: 2023A
+  Assessment: Assignment 1
+  Author: Dang Kim Quang Minh
+  ID: s3938024
+  Acknowledgement: 
+  - Nav bar: 
+    https://www.youtube.com/watch?v=PwWHL3RyQgk
+    https://www.youtube.com/watch?v=oLgtucwjVII&t=2s
+    https://www.youtube.com/watch?v=GdrbE-s5DgQ&t=137s
+  - Design inspirations: 
+    https://www.youtube.com/watch?v=6XmDdIRmg84&t=1545s
+    https://www.youtube.com/watch?v=1Df_VJ4aL9o&t=2618s
+    https://www.youtube.com/watch?v=yQimoqo0-7g&t=3056s
+    https://www.youtube.com/watch?v=ZI41tLLxNak&t=1159s
+  */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
@@ -42,7 +60,7 @@ h2 {
     color: black;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 h3 {
@@ -83,7 +101,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 200px;
     cursor: pointer;
     background-color: auto;
 }

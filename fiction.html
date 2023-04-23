@@ -1,0 +1,150 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Dang Kim Quang Minh
+ID: s3938024
+Acknowledgement:  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-imgs/centralstyle.css">
+    <link rel="stylesheet" href="styles-imgs/categories.css">
+    <link rel="stylesheet" href="styles-imgs/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Header div for desktop -->
+    <header id="desktop-header">
+        <a href="homepage.html"><img class="logo" src="styles-imgs/imgs/Logo/Book Store.png" alt="store-logo-ing"></a>
+        <div class="hamburger-icon" media="(max-width: 960px)"  onclick="menuOn()">
+            <i class="fa-solid fa-bars hamburger"></i>
+        </div>
+        
+        <!-- Nav menu -->
+        <nav>
+            <ul class="menu-items">
+                <li><a href="homepage.html">Home</a></li>            
+                <li><a href="homepage.html">Shop</a></li>
+                <li><a href="contacts.html">Contacts</a> </li>
+            </ul>
+        </nav>
+        <button>Suprise</button>
+    </header>
+
+    <!-- Drop down version of nav bar for mobile -->
+    <div id="dropdown-overlay">
+        <div class="cancel-dropdown" media="(max-width: 960px)" onclick="menuOff()">
+            <i class="fa-solid fa-xmark cancel"></i>
+        </div>
+        <div class="dropdown-list">
+            <div class="dropdown-item"><a href="homepage.html">Home</a></div>
+            <div class="dropdown-item"><a href="category.html">Shop</a></div>
+            <div class="dropdown-item"><a href="contacts.html">Contacts</a></div>
+        </div>
+    </div>
+
+    <main id="desktop-main">
+        <div class="banner-container">
+            <video autoplay muted loop src="styles-imgs/imgs/Videos/Banner-video-1.mp4" id="banner-vid"></video>
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Shop Fiction</h1>
+                </div>
+            </div>
+        </div>
+    
+        <div class="display-container">
+            <div class="header-categories">
+                <h2>Fantasy</h2>
+            </div>
+            <div class="books-container">
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Fantasy-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Manga-3.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Fantasy-2.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="display-container-2">
+            <div class="header-categories">
+                <h2>Thriller</h2>
+            </div>
+            <div class="books-container">
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Horror-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Horror-2.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Mystery-2.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="display-container-3">
+            <div class="header-categories">
+                <h2>Romance</h2>
+            </div>
+            <div class="books-container">
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Comic-3.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Romance-1.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+                <div class="books">
+                    <a href="details.html" class="book-cover"><img src="styles-imgs/imgs/Book-covers/Fiction/Romance-2.jpg" alt="Book1" width="60%"></a>
+                    <a href="details.html" class="books-name">View</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-element">
+                    <a href="#">About Us</a>
+                </div>    
+                <div class="footer-element">
+                    <a href="#">Privacy Policies</a>
+                </div>    
+                <div class="footer-element">
+                    <a href="#">Terms</a>
+                </div>    
+                <div class="footer-element">
+                    <a href="#">About Us</a>
+                </div>    
+            </div>
+    
+            <div class="copyright-container">
+                <h3 id="copyright">Copyright MingKa 2023TDM</h3>
+            </div>
+        </div>
+    </main>
+    
+</body>
+<script src="navbar.js"></script>
+</html>
